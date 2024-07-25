@@ -1,0 +1,64 @@
+/* Slider styles */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+}
+
+.slider {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.slider-item {
+    padding: 0 2rem;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.5rem;
+}
+
+.slider-item:hover {
+    content: attr(data-hover-text);
+}
+
+/* Animation for the slider */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    12.5% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    37.5% {
+        transform: translateX(-200%);
+    }
+
+    50% {
+        transform: translateX(-300%);
+    }
+
+    62.5% {
+        transform: translateX(-400%);
+    }
+
+    75% {
+        transform: translateX(-500%);
+    }
+
+    87.5% {
+        transform: translateX(-600%);
+    }
+
+    100% {
+        transform: translateX(-700%);
+    }
+}
