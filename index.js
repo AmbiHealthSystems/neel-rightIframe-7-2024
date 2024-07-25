@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const allowedOrigins = [
-    // "http://localhost:5500",
+    "http://localhost:5500",
     "http://localhost:8080",
     "https://auth.800ambi.com",
   ];
