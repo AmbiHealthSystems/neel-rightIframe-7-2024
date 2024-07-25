@@ -8,6 +8,17 @@ $(document).ready(function () {
     return arr.join("");
   }
 
+  $(".slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 2000, // Faster speed for the scrolling effect
+    cssEase: "linear",
+    infinite: true,
+    variableWidth: true,
+  });
+
   $(".slider-item").hover(
     function () {
       const originalText = $(this).text();
