@@ -1,21 +1,21 @@
 $(document).ready(function () {
-  const allowedOrigins = [
-    "http://localhost:5500",
-    "http://localhost:8080",
-    "https://auth.800ambi.com",
-  ];
+  // const allowedOrigins = [
+  //   "http://localhost:5500",
+  //   "http://localhost:8080",
+  //   "https://auth.800ambi.com",
+  // ];
 
-  let validParent = false;
-  if (window.top !== window.self) {
-    if (document.referrer) {
-      const parentUrl = new URL(document.referrer);
-      if (allowedOrigins.includes(parentUrl.origin)) {
-        validParent = true;
-      }
-    }
-  }
+  // let validParent = false;
+  // if (window.top !== window.self) {
+  //   if (document.referrer) {
+  //     const parentUrl = new URL(document.referrer);
+  //     if (allowedOrigins.includes(parentUrl.origin)) {
+  //       validParent = true;
+  //     }
+  //   }
+  // }
 
-  if (validParent) {
+  // if (validParent) {
     $(".slider-container").css("display", "block");
 
     function shuffleWord(word) {
@@ -79,5 +79,5 @@ $(document).ready(function () {
         }
       }
     );
-  }
+  // }
 });
